@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Valentine's Day</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ffe4ec,#ffd1dc);
+  font-family:Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+
+button{
+  padding:20px 40px;
+  font-size:24px;
+  border:none;
+  border-radius:20px;
+  background:#ff4d88;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{transform:scale(1.1);}
+
+#surprise{
+  display:none;
+}
+
+img{
+  width:220px;
+  margin:20px;
+}
+
+h1{
+  color:#ff2f6d;
+  font-size:40px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="start">
+  <button onclick="showLove()">Happy Valentine's Day 💌</button>
+</div>
+
+<div id="surprise">
+  <h1>For You 💖</h1>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Roses_bouquet.jpg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chocolate_assortment.jpg">
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8d6c4bb0c.mp3?filename=romantic-background-112199.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script>
+function showLove(){
+  document.getElementById("start").style.display="none";
+  document.getElementById("surprise").style.display="block";
+}
+</script>
+
+</body>
+</html>
